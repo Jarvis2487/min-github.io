@@ -865,15 +865,15 @@ table tr td :last-child {
   margin-bottom: 0;
 }
 
-/* --- Code blocks --- */
-
+/* --- 인라인 코드 --- */
 code {
   padding: 0.125rem 0.25rem;
-  color: #c7254e;
-  background-color: #f9f2f4;
+  color: #ffffff;            /* 글자 흰색 */
+  background-color: #222222; /* 인라인 코드 배경 어둡게 */
   border-radius: 0.25rem;
 }
 
+/* --- 블록 코드 --- */
 pre code {
   padding: 0;
   background-color: transparent;
@@ -886,43 +886,31 @@ pre {
   border-radius: 0.25rem;
   padding: 0.59375rem;
 }
-.highlight pre {
-  border: none;
-  background: none;
-  margin: 0;
-}
+
+/* --- 전체 코드 블록 --- */
 .highlight > pre {
-  background-image: linear-gradient(
-    rgba(0,0,0,0.03), rgba(0,0,0,0.03) 1.5em, rgba(0,0,0,0.02) 1.5em, rgba(0,0,0,0.02) 3em);
-  background-size: auto 3em;
-  background-position-y: 0.625rem;
-  border: 1px solid rgba(0,0,0,0.1);
-  border-left: 0.4375rem solid #444;
-}
-.highlight > pre:not([class~="highlight"]) { /* code block with line number */
-  padding: 0;
-}
-.highlight table,
-.highlight tr,
-.highlight td { /* to be removed after fixing table styles */
-  border: none;
-  background: none;
-  padding: 0;
+  background-color: #1e1e1e;       /* 코드 블록 배경 어둡게 */
+  color: #ffffff;                   /* 글자 흰색 */
+  border: 1px solid rgba(255,255,255,0.1); /* 테두리 연하게 */
+  border-left: 0.4375rem solid #888;      /* 강조용 왼쪽 색상 */
   margin: 0;
-}
-.highlight pre.lineno {
-  color: rgba(0,0,0,0.3);
-  border-radius: 0;
-  border-right: 2px solid #444;
 }
 
-/* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
+/* --- 줄 번호 --- */
+.highlight pre.lineno {
+  color: rgba(255,255,255,0.4);   /* 줄 번호 흰색 계열로 표시 */
+  border-right: 2px solid #888;   /* 오른쪽 경계선 색상 */
+  border-radius: 0;
+}
+
+/* --- 줄 번호 선택 방지 --- */
 .lineno {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
+
 .lineno::selection, .lineno::-moz-selection {
   background: none;
 }
