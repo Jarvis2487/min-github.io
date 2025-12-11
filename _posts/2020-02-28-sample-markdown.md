@@ -59,8 +59,8 @@ foo(3)
 
 And here is the same code yet again but with line numbers:
 
-{% raw %}
 {% highlight javascript linenos %}
+{% raw %}
 /* --- Test syntax highlighting --- */
 
 var foo = 42;
@@ -88,8 +88,9 @@ console.log(obj.name, arr[2]);
 // Single-line comment
 /* Multi-line
    comment */
-{% endhighlight %}
 {% endraw %}
+{% endhighlight %}
+
 
 
 ## Boxes
