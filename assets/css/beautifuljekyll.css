@@ -907,29 +907,14 @@ pre code {
   color: inherit;  /* 언어별 구문 색상 그대로 사용 */
 }
 
-/* --- Pygments 구문 색상 --- */
-.highlight .k { color: #cc99cd; }    /* keyword */
-.highlight .c { color: #999999; }    /* comment */
-.highlight .cm { color: #999999; }   /* comment (alternate) */
-.highlight .cp { color: #999999; }   /* comment preprocessor */
-.highlight .c1 { color: #999999; }   /* comment single-line */
-.highlight .cs { color: #999999; }   /* comment special */
-.highlight .err { color: #ff0000; }  /* error */
-.highlight .o { color: #f2777a; }    /* operator */
-.highlight .ch { color: #999999; }   /* inline comment */
-.highlight .nf { color: #f99157; }   /* function name */
-.highlight .nn { color: #6699cc; }   /* class name */
-.highlight .n { color: #ffffff; }    /* name */
-.highlight .s { color: #99cc99; }    /* string */
-.highlight .p { color: #ffffff; }    /* punctuation */
-.highlight .l { color: #ffffff; }    /* literal */
-.highlight .mi { color: #f99157; }   /* number */
-.highlight .mb { color: #f99157; }   /* number */
-.highlight .mf { color: #f99157; }   /* float */
-.highlight .vc { color: #ffffff; }   /* variable */
-.highlight .vg { color: #ffffff; }   /* variable global */
-.highlight .vi { color: #ffffff; }   /* variable instance */
-.highlight .il { color: #f99157; }   /* integer literal */
+.highlight > pre {
+  background-color: #1e1e1e;   /* 배경 유지 */
+  color: #e0e0e0;              /* 기본 텍스트 밝게 */
+  border: 1px solid rgba(255,255,255,0.1);
+  border-left: 0.4375rem solid #888;
+  margin: 0;
+}
+
 
 /* --- 줄 번호 --- */
 .highlight pre.lineno {
