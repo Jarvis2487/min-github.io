@@ -890,7 +890,7 @@ code {
 /* --- 블록 코드 --- */
 pre {
   font-size: 0.875rem;
-  color: #ffffff; 
+  color: #eeeeee; 
   line-height: 1.5em;
   border-radius: 0.25rem;
   padding: 0.59375rem;
@@ -903,6 +903,7 @@ pre {
 
 /* --- 코드 내부 --- */
 pre code {
+  color: #eeeeee; 
   background-color: transparent;
   border-radius: 0;
   color: inherit;  /* 언어별 구문 색상 그대로 사용 */
