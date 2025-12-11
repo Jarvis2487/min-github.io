@@ -830,40 +830,54 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   background-color: var(--hover-col);
 }
 
-/* --- Tables --- */
+/* --- Tables (Dark Mode Friendly) --- */
 
 table {
   padding: 0;
   overflow-x: auto;
   display: block;
+  border-collapse: collapse;
 }
+
+/* 기본 배경을 약간 어두운 톤으로 */
 table tr {
-  border-top: 1px solid #cccccc;
-  background-color: var(--page-col);
+  border-top: 1px solid #444;
+  background-color: #1a1a1a;
   margin: 0;
   padding: 0;
 }
+
+/* 짝수 줄을 조금 더 밝게 */
 table tr:nth-child(2n) {
-  background-color: #f8f8f8;
+  background-color: #222;
 }
+
+/* 셀 테두리 및 텍스트 색 조정 */
 table tr th,
 table tr td {
-  border: 1px solid #cccccc;
+  border: 1px solid #555;
   text-align: left;
   margin: 0;
   padding: 0.375rem 0.8125rem;
+  color: #e5e5e5;   /* 텍스트 밝게 */
 }
+
 table tr th {
   font-weight: bold;
+  color: #ffffff;  /* 헤더는 더 밝게 */
 }
+
+/* 첫/마지막 요소 여백처리 */
 table tr th :first-child,
 table tr td :first-child {
   margin-top: 0;
 }
+
 table tr th :last-child,
 table tr td :last-child {
   margin-bottom: 0;
 }
+
 
 /* --- 인라인 코드 --- */
 code {
