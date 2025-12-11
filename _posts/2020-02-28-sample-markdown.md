@@ -60,11 +60,41 @@ foo(3)
 And here is the same code yet again but with line numbers:
 
 {% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
+/* --- Test syntax highlighting --- */
+
+// 변수 선언
+var foo = 42;
+let bar = "Hello World!";
+const baz = true;
+
+// 함수 정의
+function add(x, y) {
+  return x + y;  // 연산자와 plain text
 }
-foo(3)
+
+// 조건문
+if (baz) {
+  console.log(bar); // 문자열 출력
+} else {
+  console.log(foo); // 숫자 출력
+}
+
+// 반복문
+for (let i = 0; i < 5; i++) {
+  console.log(i); // plain text 숫자
+}
+
+// 객체와 배열
+let obj = { name: "Alice", age: 30 };
+let arr = [1, 2, 3, 4, 5];
+console.log(obj.name, arr[2]);
+
+// 주석
+// Single-line comment
+/* Multi-line
+   comment */
 {% endhighlight %}
+
 
 ## Boxes
 You can add notification, warning and error boxes like this:
