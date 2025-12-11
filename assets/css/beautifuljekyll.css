@@ -890,6 +890,7 @@ code {
 /* --- 블록 코드 --- */
 pre {
   font-size: 0.875rem;
+  color: #ffffff; 
   line-height: 1.5em;
   border-radius: 0.25rem;
   padding: 0.59375rem;
