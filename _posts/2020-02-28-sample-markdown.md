@@ -59,6 +59,7 @@ foo(3)
 
 And here is the same code yet again but with line numbers:
 
+{% raw %}
 {% highlight javascript linenos %}
 /* --- Test syntax highlighting --- */
 
@@ -78,16 +79,17 @@ if (baz) {
 
 for (let i = 0; i < 5; i++) {
   console.log(i);
+}
 
 let obj = { name: "Alice", age: 30 };
 let arr = [1, 2, 3, 4, 5];
 console.log(obj.name, arr[2]);
 
-
 // Single-line comment
 /* Multi-line
    comment */
 {% endhighlight %}
+{% endraw %}
 
 
 ## Boxes
