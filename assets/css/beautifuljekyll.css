@@ -911,6 +911,11 @@ pre {
   margin: 0;
 }
 
+.highlight pre code {
+    color: #ddd; /* 기본 텍스트 색상 */
+}
+
+
 /* --- 줄 번호 --- */
 .highlight pre.lineno {
   color: rgba(255,255,255,0.4);   /* 줄 번호 흰색 계열로 표시 */
